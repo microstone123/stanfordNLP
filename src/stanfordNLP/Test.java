@@ -8,7 +8,6 @@ import org.apdplat.word.segmentation.SegmentationAlgorithm;
 import org.apdplat.word.segmentation.Word;
 import org.apdplat.word.tagging.PartOfSpeechTagging;
 import org.apdplat.word.util.WordConfTools;
-import org.jsoup.select.Selector.SelectorParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -57,7 +56,11 @@ public class Test {
 
 	public static void main(String[] args) {
 		List<Word> parse;
-		String question = "给我用轻柔程序";
+		String question ;
+//		question ="毛绒玩具给我洗下";
+//		question ="我要使用高温自洁程序";
+		question = "我有几件的确良衣服要洗";
+
 		parse = parse(question);
 		setParse(parse, question);
 //		question = "涤粘华达呢怎么洗";
